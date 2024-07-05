@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(yellow, black);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to_do_form {
+    border: 5px solid black;
+    border-radius: 10px;
+    min-width: 350px;
+    width: 20%;
+    height: 70%;
+}
+
+.to_do_form__title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 10%;
+}
+
+.to_do_form__content {
+    height: 79%;
+    overflow-y: auto;
+
+}
+
+.to_do_form__input {
+    height: 10%;
+}
+
+.to_do_form__content__item {
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.to_do_form__content__item--content {
+    font-size: 18px;
+    width: 90%;
+    display: inline-block;
+    text-wrap: wrap;
+}
+
+.to_do_form__input {
+    padding-top: 0;
+}
+
+.to_do_form__input input[type='text'] {
+    width: 70%;
+    height: 80%;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    bottom: 5px;
+}
+
+.to_do_form__input input[type='submit'] {
+    width: 25%;
+    height: 80%;
+    text-wrap: wrap;
+    position: relative;
+    top: 3px;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+}
+
+.to_do_form__input input[type='submit']:hover {
+    color: white;
+    background-color: black;
+}
+
+
+
