@@ -77,18 +77,13 @@ body {
     background-color: white;
 }
 
+@keyframes colorChange {
+    0% { background-color: white; color: black; }
+    100% { background-color: black; color: white;}
+}
+
 .to_do_form__input input[type='submit']:hover {
-    @keyframes coloric {
-        0% {
-            background-color: white;
-        },
-        
-        100% {
-            background-color: black;
-        }
-        
-    }
-    transform: coloric 1s linear;
+    animation: colorChange 0.3s linear forwards;
     cursor: pointer;
 }
 
