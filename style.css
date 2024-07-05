@@ -78,8 +78,18 @@ body {
 }
 
 .to_do_form__input input[type='submit']:hover {
-    color: white;
-    background-color: black;
+    @keyframes coloric {
+        0% {
+            background-color: white;
+        },
+        
+        100% {
+            background-color: black;
+        }
+        
+    }
+    transform: coloric 1s linear;
+    cursor: pointer;
 }
 
 
